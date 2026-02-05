@@ -1,3 +1,9 @@
+eolab-drones-sources (1.0.0-2) jammy; urgency=medium
+
+  * Fix: make /usr/lib/eolab-drones-sources/apply executable (postinst error 126).
+
+ -- Harley Lara <contact@harleylara.com>  Thu, 05 Feb 2026 13:10:00 +0000
+
 eolab-drones-sources (1.0.0-1) jammy; urgency=medium
 
   * Initial release.
