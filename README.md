@@ -7,7 +7,12 @@ Helper Debian package to manage eolab-drones’ APT source lists.
 ```
 wget -O /tmp/eolab-drones-sources.deb \
   https://github.com/EOLab-HSRW/drones-sources/releases/latest/download/eolab-drones-sources_latest.deb
-sudo apt install /tmp/eolab-drones-sources.deb
+sudo apt-get install /tmp/eolab-drones-sources.deb
+```
+
+If you already have the `eolab-drones-sources` package, you can update the source list by simply:
+```
+sudo apt-get install --only-upgrade eolab-drones-sources
 ```
 
 **For maintainers and developers**: We offer a `stable` (default) set of stable sources, but we also have an `experimental` set of sources with less-tested packages or more bleeding edge sources. You can easily change the set of source by running:
