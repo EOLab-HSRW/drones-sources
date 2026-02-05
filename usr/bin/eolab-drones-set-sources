@@ -1,0 +1,33 @@
+#!/bin/sh
+set -eu
+
+CHANNEL_FILE="/etc/eolab-drones-sources/channel"
+APPLY="/usr/lib/eolab-drones-sources/apply"
+
+need_root() {
+  [ "$(id -u)" -eq 0 ] || { echo "must be run as root" >&2; exit 1; }
+}
+
+set_channel() {
+  need_root
+  mkdir -p /etc/eolab-drones-sources
+  printf "%s\n" "$1" > "$CHANNEL_FILE"
+  "$APPLY"
+}
+
+case "${1:-}" in
+  stable|experimental)
+    set_channel "$1"
+    ;;
+  status)
+    if [ -r "$CHANNEL_FILE" ]; then
+      printf "channel=%s\n" "$(cat "$CHANNEL_FILE")"
+    else
+      printf "channel=stable\n"
+    fi
+    ;;
+  *)
+    echo "Usage: eolab-drones-set-channel {stable|experimental|status}" >&2
+    exit 2
+    ;;
+esac

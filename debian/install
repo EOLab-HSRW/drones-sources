@@ -1,0 +1,4 @@
+usr/share/keyrings/eolab-drones-keyring.gpg usr/share/keyrings/
+usr/share/eolab-drones-sources/templates/* usr/share/eolab-drones-sources/templates/
+usr/lib/eolab-drones-sources/apply usr/lib/eolab-drones-sources/
+usr/bin/eolab-drones-set-sources usr/bin/

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+case "$1" in
+  purge)
+    rm -f /etc/apt/sources.list.d/eolab-drones.sources
+    rm -rf /etc/eolab-drones-sources
+  ;;
+esac
+
+exit 0

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+case "$1" in
+  configure|triggered)
+    /usr/lib/eolab-drones-sources/apply
+  ;;
+esac
+
+exit 0

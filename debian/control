@@ -1,0 +1,14 @@
+Source: eolab-drones-sources
+Section: admin
+Priority: optional
+Maintainer: Harley Lara <contact@harleylara.com>
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 13)
+Homepage: https://github.com/EOLab-HSRW/drones-sources
+
+Package: eolab-drones-sources
+Architecture: all
+Depends: ${misc:Depends}, apt, ca-certificates
+Description: Manage EOLab drones APT sources automatically
+ This package installs and updates the EOLab drones APT source
+ configuration automatically during upgrades.

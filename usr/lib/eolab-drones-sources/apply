@@ -1,0 +1,71 @@
+#!/bin/sh
+set -eu
+
+CHANNEL_FILE="/etc/eolab-drones-sources/channel"
+OUT="/etc/apt/sources.list.d/eolab-drones.sources"
+TEMPL_DIR="/usr/share/eolab-drones-sources/templates"
+
+need_root() {
+  [ "$(id -u)" -eq 0 ] || { echo "must be run as root" >&2; exit 1; }
+}
+
+get_codename() {
+  # Ubuntu 20.04+ has VERSION_CODENAME in /etc/os-release
+  if [ -r /etc/os-release ]; then
+    # shellcheck disable=SC1091
+    . /etc/os-release
+    if [ -n "${VERSION_CODENAME:-}" ]; then
+      printf "%s\n" "$VERSION_CODENAME"
+      return 0
+    fi
+  fi
+  echo "jammy"
+}
+
+get_channel() {
+  if [ -r "$CHANNEL_FILE" ]; then
+    ch="$(cat "$CHANNEL_FILE" || true)"
+    case "$ch" in
+      stable|experimental) printf "%s\n" "$ch"; return 0 ;;
+    esac
+  fi
+  printf "%s\n" "stable"
+}
+
+template_path() {
+  codename="$1"
+  channel="$2"
+  tpl="${TEMPL_DIR}/${codename}-${channel}.sources"
+  if [ -r "$tpl" ]; then
+    printf "%s\n" "$tpl"
+  else
+    # fallback for unsupported codename: use jammy templates
+    printf "%s\n" "${TEMPL_DIR}/jammy-${channel}.sources"
+  fi
+}
+
+atomic_install() {
+  src="$1"
+  dir="$(dirname "$OUT")"
+  tmp="${OUT}.tmp.$$"
+
+  install -d -m 0755 "$dir"
+  install -m 0644 "$src" "$tmp"
+  mv -f "$tmp" "$OUT"
+}
+
+main() {
+  need_root
+  codename="$(get_codename)"
+  channel="$(get_channel)"
+  tpl="$(template_path "$codename" "$channel")"
+
+  if [ ! -r "$tpl" ]; then
+    echo "template not found: $tpl" >&2
+    exit 1
+  fi
+
+  atomic_install "$tpl"
+}
+
+main "$@"
