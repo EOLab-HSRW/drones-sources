@@ -110,17 +110,20 @@ jobs:
           chmod 700 "$GNUPGHOME"
           echo "GNUPGHOME=$GNUPGHOME" >> "$GITHUB_ENV"
 
-          # Import secret key (ASCII-armored)
-          echo "${{ secrets.DRONES_GPG_PRIVATE_KEY }}" | gpg --batch --import
+          # Import the private key from secrets
+          echo "${{ secrets.DRONES_GPG_PRIVATE_KEY }}" | gpg --batch --quiet --import
 
-          # Trust it for unattended signing
-          KEYID="$(gpg --list-secret-keys --with-colons | awk -F: '/^sec:/ {print $5; exit}')"
-          if [[ -z "${KEYID:-}" ]]; then
-            echo "::error title=GPG key import failed::No secret key found after import."
+          # Extract the primary key fingerprint
+          FPR="$(gpg --list-secret-keys --with-colons | awk -F: '$1=="fpr"{print $10; exit}')"
+          if [[ -z "${FPR:-}" ]]; then
+            echo "::error title=GPG import failed::No secret key fingerprint found after import."
             exit 1
           fi
-          echo "$KEYID:6:" | gpg --batch --import-ownertrust
-          echo "APT_SIGNING_KEYID=$KEYID" >> "$GITHUB_ENV"
+
+          # Export for later steps
+          echo "APT_SIGNING_FPR=$FPR" >> "$GITHUB_ENV"
+
+          echo "::notice title=GPG key ready::Imported signing key fingerprint ${FPR}"
 
       # -------------------- Build + sign static APT repo tree --------------------
       - name: Build and sign APT repo (GitHub Pages)
@@ -129,6 +132,7 @@ jobs:
           APT_GPG_PASSPHRASE: ${{ secrets.APT_GPG_PASSPHRASE }}
         run: |
           set -euo pipefail
+          : "${APT_SIGNING_FPR:?APT_SIGNING_FPR is not set (GPG key import step failed)}"
 
           DEB="${{ steps.names.outputs.deb_path }}"
           OUT="public"
@@ -170,15 +174,15 @@ jobs:
             # Sign Release → InRelease (clearsigned) + Release.gpg (detached)
             if [[ -n "${APT_GPG_PASSPHRASE:-}" ]]; then
               gpg --batch --yes --pinentry-mode loopback --passphrase "$APT_GPG_PASSPHRASE" \
-                --local-user "$APT_SIGNING_KEYID" \
+                --local-user "$APT_SIGNING_FPR" \
                 --clearsign -o "dists/${SUITE}/InRelease" "dists/${SUITE}/Release"
               gpg --batch --yes --pinentry-mode loopback --passphrase "$APT_GPG_PASSPHRASE" \
-                --local-user "$APT_SIGNING_KEYID" \
+                --local-user "$APT_SIGNING_FPR" \
                 -abs -o "dists/${SUITE}/Release.gpg" "dists/${SUITE}/Release"
             else
-              gpg --batch --yes --local-user "$APT_SIGNING_KEYID" \
+              gpg --batch --yes --local-user "$APT_SIGNING_FPR" \
                 --clearsign -o "dists/${SUITE}/InRelease" "dists/${SUITE}/Release"
-              gpg --batch --yes --local-user "$APT_SIGNING_KEYID" \
+              gpg --batch --yes --local-user "$APT_SIGNING_FPR" \
                 -abs -o "dists/${SUITE}/Release.gpg" "dists/${SUITE}/Release"
             fi
           done
@@ -201,4 +205,3 @@ jobs:
           if [[ -n "${GNUPGHOME:-}" && -d "$GNUPGHOME" ]]; then
             rm -rf "$GNUPGHOME"
           fi
-
