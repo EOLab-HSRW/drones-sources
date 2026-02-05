@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   release:
-    uses: EOLab-HSRW/drones-workflows/.github/workflows/deb-apt-release.yaml@v1
+    uses: EOLab-HSRW/drones-workflows/.github/workflows/deb-apt-release.yaml@main
     with:
       suites: "jammy"
       component: "main"
