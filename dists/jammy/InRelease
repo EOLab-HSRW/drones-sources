@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all
+Codename: jammy
+Components: main
+Date: Thu, 05 Feb 2026 23:45:51 +0000
+Description: APT repo for EOLab-HSRW/drones-sources
+Label: drones-sources
+Origin: EOLab-HSRW
+Suite: jammy
+MD5Sum:
+ 20b980246573e48e09df8905efcfe8a8              196 Release
+ 401b9390f4d662844a921ecd8dda1e90              650 main/binary-all/Packages
+ bfe46c4a7f5760817aa2793b1c4c300f              450 main/binary-all/Packages.gz
+SHA1:
+ 05ea07e9c804af0febef6e1417e0cee21b301750              196 Release
+ 5581bc524298b7ed532d0755348605395a4ecd82              650 main/binary-all/Packages
+ 7514af0aee63a88f3e88b2644bc8f5d4b0f4bef9              450 main/binary-all/Packages.gz
+SHA256:
+ f54e4834ffe23d8febc165cc9e11fb00399fe4dbd50d7d21393e3ae2d67cecde              196 Release
+ d924b26f7cba1fa0bc1f90b8d379c2170df962e3c0beaf2945a0938754f9329e              650 main/binary-all/Packages
+ c4e3be3757ef193415038e7b75e5cfd2b71695431203226bcd614c5a4f9d1f00              450 main/binary-all/Packages.gz
+SHA512:
+ 08db2ac8f57b408cd1f663d7c320f32c5973b7dccfd9d66f9d7a9b725d8f9f2a762099fbf37495169cfb5c0b41e8982c528291317f08efb0eed1bf0fba68ba19              196 Release
+ a8e4f5e5e7dd9ec55acd677dad4b8d526a82403009d55f225caed72c0ae320d7f033d785d65b126827775b7e0aa3595d25967bc5ec8b5968d2a8e78f7e3dd557              650 main/binary-all/Packages
+ ff3a9dad1021dddb869a552ce059b246abcf2b77e9a588eb219f5a27969ce15ae35de9d503a2127a1afa0466d74dad384da6ddc54ca28758387c10b055e86d74              450 main/binary-all/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEErODy6zn86qlZ/w9h6oNx8Bq5NiEFAmmFK68ACgkQ6oNx8Bq5
+NiEizwf9GCXhfc6SIFW1jv8ZS8dMYm4+r5xhonIMFkRWlxEH3fE9IP68SETqPGLk
+J37txeB1UrXM5NnPdNWDkPaBFVGZISP4ZEOlUaTPc53BSo6UmwAa98WVVvxTfsxs
+s1FLCPo5iV+XW1cyUooLTytxU1uNu7Q5MTpiRntNTGgU4iZhaFlnWFfeeud/52AP
+G7lMj/AmVBGEBB9yxlkVLJ1KFtkpWry2C7ciIHRCY9LYbOSg+sK7vHxTn32c0ldt
+GPnrG0s5leyX3a05WbWSGzv0FoQB1v8mGCOlkJ3byZ2gMfsE0KVyMnUhVyIz9s4W
+cGrjjyt3TykH3Z2VcpOVQ6r4HSNNLA==
+=Ofqb
+-----END PGP SIGNATURE-----
