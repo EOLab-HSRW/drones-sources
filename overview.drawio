@@ -1,0 +1,135 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="8w7L0Kd9gWLZ_bW_OFYK">
+    <mxGraphModel dx="942" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-6" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="430" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-1" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="" vertex="1">
+          <mxGeometry height="60" width="45" x="582.5" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="eolab-drones.sources" vertex="1">
+          <mxGeometry height="20" width="120" x="545" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-4" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="jammy" vertex="1">
+          <mxGeometry height="60" width="50" x="410" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-5" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="noble" vertex="1">
+          <mxGeometry height="60" width="50" x="440" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-27" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="/usr/share/eolab-drones-sources/templates/" vertex="1">
+          <mxGeometry height="20" width="240" x="335" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-28" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="454.93" y="500" as="sourcePoint" />
+            <mxPoint x="475.07" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-9" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="postinst" vertex="1">
+          <mxGeometry height="40" width="100" x="410" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;i&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;*consolidated list&lt;/font&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="20" width="82" x="564" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontStyle=2" value="1. check OS codename&lt;div&gt;2. pick channel (stable or experimental)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. generate consolidated list&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="665" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-17" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=85;exitDy=40;exitPerimeter=0;" target="x_S1FD3jEhc5C5wOp9mF-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-20" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="sudo apt-get install eolab-drones-sources.deb" vertex="1">
+          <mxGeometry height="20" width="260" x="475" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-18" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="eolab-drones-sources.deb" vertex="1">
+          <mxGeometry height="40" width="165" x="520" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-21" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="581.25" y="230" as="sourcePoint" />
+            <mxPoint x="517.5" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-22" connectable="0" parent="x_S1FD3jEhc5C5wOp9mF-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="templates in path:" vertex="1">
+          <mxGeometry relative="1" x="0.1037" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="*set keyring, templates and channel tool" vertex="1">
+          <mxGeometry height="50" width="105" x="552.5" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-23" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-19" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610" y="360" as="sourcePoint" />
+            <mxPoint x="730" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-26" connectable="0" parent="x_S1FD3jEhc5C5wOp9mF-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="keyring in:" vertex="1">
+          <mxGeometry relative="1" x="-0.0011" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="usr/share/keyrings/eolab-drones-keyring.gpg" vertex="1">
+          <mxGeometry height="20" width="255" x="690" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-30" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-19" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-33" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="410" as="sourcePoint" />
+            <mxPoint x="605" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-32" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="apply" vertex="1">
+          <mxGeometry height="40" width="105" x="552.5" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="/usr/lib/eolab-drones-sources/apply" vertex="1">
+          <mxGeometry height="20" width="200" x="505" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-35" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="459.95" y="420" as="sourcePoint" />
+            <mxPoint x="460" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-36" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="x_S1FD3jEhc5C5wOp9mF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="/usr/bin/eolab-drones-set-channel" vertex="1">
+          <mxGeometry height="20" width="200" x="667.5" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-38" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="340" as="sourcePoint" />
+            <mxPoint x="750" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-39" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="install tooling" vertex="1">
+          <mxGeometry x="605" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-41" edge="1" parent="1" source="x_S1FD3jEhc5C5wOp9mF-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="x_S1FD3jEhc5C5wOp9mF-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-40" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05555555555555555;" value="eolab-drones-set-channel" vertex="1">
+          <mxGeometry height="40" width="180" x="677.5" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontStyle=2" value="sudo eolab-drones-set-channel stable" vertex="1">
+          <mxGeometry height="20" width="180" x="880" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="x_S1FD3jEhc5C5wOp9mF-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontStyle=2" value="sudo eolab-drones-set-channel experimental" vertex="1">
+          <mxGeometry height="20" width="210" x="880" y="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -22,8 +22,12 @@ sudo eolab-drones-set-sources experimental
 sudo apt-get update
 ```
 
-## How you publish new versions (Maintainer)
+## How to publish new versions - Maintainer
 
 1. Update [debian/changelog](debian/changelog). For details how, see [4.3. changelog - Debian Manual](https://www.debian.org/doc/manuals/maint-guide/dreq.en.html#changelog)
 2. Commit and push
 3. Tag and push the tag. This triggers the CI and releases a new version.
+
+## Overview - Maintainer(s)
+
+![overview](./overview.png)
