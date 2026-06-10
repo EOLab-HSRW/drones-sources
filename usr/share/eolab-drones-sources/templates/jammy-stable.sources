@@ -3,3 +3,9 @@ URIs: https://eolab-hsrw.github.io/drones-sources
 Suites: jammy
 Components: main
 Signed-By: /usr/share/keyrings/eolab-drones-keyring.gpg
+
+Types: deb
+URIs: https://eolab-hsrw.github.io/foxy-drivers
+Suites: jammy
+Components: main
+Signed-By: /usr/share/keyrings/eolab-drones-keyring.gpg
