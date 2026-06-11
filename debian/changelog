@@ -1,3 +1,9 @@
+eolab-drones-sources (1.0.1-1) jammy; urgency=medium
+
+  * Fix: Problem with defaulting to host arch on the list of package source.
+
+ -- Harley Lara <contact@harleylara.com>  Thu, 11 Jun 2026 09:45:00 +0000
+
 eolab-drones-sources (1.0.1-0) jammy; urgency=medium
 
   * Update: add foxy-driver https://github.com/EOLab-HSRW/foxy-drivers as a
