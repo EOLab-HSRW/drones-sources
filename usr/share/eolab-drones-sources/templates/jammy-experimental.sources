@@ -1,5 +1,6 @@
 Types: deb
 URIs: https://eolab-hsrw.github.io/drones-rosdep
 Suites: jammy
+Architectures: all
 Components: main
 Signed-By: /usr/share/keyrings/eolab-drones-keyring.gpg
