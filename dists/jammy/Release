@@ -1,0 +1,32 @@
+Architectures: amd64 arm64
+Codename: jammy
+Components: main
+Date: Sun, 28 Jun 2026 04:59:27 +0000
+Description: APT repo for EOLab-HSRW/drones-sources
+Label: drones-sources
+Origin: EOLab-HSRW
+Suite: jammy
+MD5Sum:
+ 388231c86dff69c9f1f1c4a93b0aef4f              204 Release
+ 4b100061f2f4201815cb807db0955d4d              650 main/binary-amd64/Packages
+ dbcb92b2b37d1f4370a7e05593f42d52              451 main/binary-amd64/Packages.gz
+ 4b100061f2f4201815cb807db0955d4d              650 main/binary-arm64/Packages
+ dbcb92b2b37d1f4370a7e05593f42d52              451 main/binary-arm64/Packages.gz
+SHA1:
+ c2d850e97178c6834ee68dfeca4b2012181b3a5c              204 Release
+ 6aa2fc1518d7c7a6ffa81619d634a056903840ed              650 main/binary-amd64/Packages
+ 9f155e51ae4f7c4b756a0ce60aa7a94310076fad              451 main/binary-amd64/Packages.gz
+ 6aa2fc1518d7c7a6ffa81619d634a056903840ed              650 main/binary-arm64/Packages
+ 9f155e51ae4f7c4b756a0ce60aa7a94310076fad              451 main/binary-arm64/Packages.gz
+SHA256:
+ e7e99771cf3036d1944747bb9cc19d629180fe73a03488e1cdffd2b109973218              204 Release
+ db4878521ac20f6c720aee4b53d89ae2739a71b0f05bdd744fc52d6c9d3d9d8e              650 main/binary-amd64/Packages
+ 56634bb10af24207f2e8c7f1da70d76178b9ce14541300bf1e3aa2fa5a9e0b4c              451 main/binary-amd64/Packages.gz
+ db4878521ac20f6c720aee4b53d89ae2739a71b0f05bdd744fc52d6c9d3d9d8e              650 main/binary-arm64/Packages
+ 56634bb10af24207f2e8c7f1da70d76178b9ce14541300bf1e3aa2fa5a9e0b4c              451 main/binary-arm64/Packages.gz
+SHA512:
+ a24897bd60e1ddfcc8ae2a85405a90f7347d4ec1963427e2e7b8bcb7b2198cc5d18362bd40e01fd2ddcb38c021b66f0cc01628a5238484187dee941879f8f410              204 Release
+ 4f6c4888b44606b555b60f7ae481d2ec783ce96360f0d5a037a1f79f3869845571b502524eaabf4446750bd465ed4010f23ffa0a0fd1fa7b7328ad008d6a7de2              650 main/binary-amd64/Packages
+ 115264e731c2c30a8ee667143e11d850b37b4f39921fe924b88be5f7c9a840446226d78158c2c48152c29d4b7393919673ad9bc19c5caffaddb93b012e00fa80              451 main/binary-amd64/Packages.gz
+ 4f6c4888b44606b555b60f7ae481d2ec783ce96360f0d5a037a1f79f3869845571b502524eaabf4446750bd465ed4010f23ffa0a0fd1fa7b7328ad008d6a7de2              650 main/binary-arm64/Packages
+ 115264e731c2c30a8ee667143e11d850b37b4f39921fe924b88be5f7c9a840446226d78158c2c48152c29d4b7393919673ad9bc19c5caffaddb93b012e00fa80              451 main/binary-arm64/Packages.gz

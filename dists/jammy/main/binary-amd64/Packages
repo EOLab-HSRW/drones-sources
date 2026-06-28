@@ -1,0 +1,18 @@
+Package: eolab-drones-sources
+Version: 1.0.2-2
+Architecture: all
+Maintainer: Harley Lara <contact@harleylara.com>
+Installed-Size: 21
+Depends: apt, ca-certificates
+Filename: pool/main/eolab-drones-sources_1.0.2-2_all.deb
+Size: 4522
+MD5sum: 5c80dfd09fe3ab58a58436bb50100e7a
+SHA1: ac3242377bc17161b214d40bba0e2541c8709506
+SHA256: 2097e7e5e91d830cff777978cf7dc19e1631036d27319054e0fe52857720b546
+Section: admin
+Priority: optional
+Homepage: https://github.com/EOLab-HSRW/drones-sources
+Description: Manage EOLab drones APT sources automatically
+ This package installs and updates the EOLab drones APT source
+ configuration automatically during upgrades.
+
