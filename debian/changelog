@@ -1,3 +1,11 @@
+eolab-drones-sources (1.0.2-1) jammy; urgency=medium
+
+  * Add drones-rosdep APT source.
+  * Remove drones-rosdep from experimental sources.
+  * Use amd64 and arm64 APT architectures instead of all.
+
+ -- Harley Lara <contact@harleylara.com>  Sun, 28 Jun 2026 06:29:00 +0200
+
 eolab-drones-sources (1.0.1-1) jammy; urgency=medium
 
   * Fix: Problem with defaulting to host arch on the list of package source.
